@@ -1,0 +1,19 @@
+.button-group button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 50%; /* Makes the button round */
+    margin: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button-group button:hover, .button-group button.active {
+    background-color: #555; /* Dark background on hover/active */
+    color: white;
+}
+
+.projects-container .d-flex {
+    display: none; 
+}
+
