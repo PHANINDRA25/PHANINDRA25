@@ -1,11 +1,13 @@
 
-Hi, I’m @PHANINDRA25
+Hi, I’m Phanindra
 
-My field of interest is  Data Science
+👋 I'm a passionate data professional with a strong foundation in Machine Learning and Data Engineering. I love turning raw data into meaningful insights and building scalable pipelines that power real-world applications.
 
-I have 3 years of experience in the Energy Industry  where I developed E2E data pipelines using AWS, performed visualizations, and used analytical tools to improve processes and drive business performance.
+🚀 I'm continuously expanding my learning curve by exploring diverse AI models, experimenting with new tools, and developing hands-on side projects that combine creativity with data-driven solutions.
 
-Experience in Machine Learning including Supervised(Classification & Regression) & Unsupervised(Clustering) Learning.
+💡 Whether it's optimizing systems, automating workflows, or diving into deep learning, I'm all about building things that make data work smarter.
+
+Let's connect and build something awesome! 
 
 Reach out to me on
 - LinkedIn: https://www.linkedin.com/in/phanindra-anagam/
