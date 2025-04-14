@@ -139,175 +139,85 @@
 	    </div>
 	  </nav>
 	  <section id="home-section" class="hero">
-		  <div class="home-slider  owl-carousel">
-	       <div class="slider-item ">
-	      	<div class="overlay"></div>
-	         <div class="container">
-	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/12.png);">
-	          	 <div class="overlay"></div>
-	          	</div>
-		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-		          	<div class="text">
-		          		<span class="subheading">Hey!</span>
-			            <h1 class="mb-4 mt-3">I'm <span>Sai Phanindra</span></h1>
-
-						<!-- Element to contain animated typing -->
-						<span id="typing-animation"></span>
-
-						<script>
-
-						// Initialize the typing animation
-						const typingAnimationElement = document.getElementById('typing-animation');
-
-						// Create an array of typing text
-						const typingTexts = [
-						'Data Analyst',
-						'Data Scientist',
-						// 'Teacher   ',
-						];
-
-						// Create a function to display the typing animation for a given text
-						function playTypingAnimation(text) {
-						// Loop through each character and add it to the element
+		<div class="home-slider owl-carousel">
+		  <div class="slider-item">
+			<div class="overlay"></div>
+			<div class="container">
+			  <div class="row d-md-flex no-gutters slider-text align-items-center" data-scrollax-parent="true">
+	  
+				<!-- TEXT CONTENT (Left Side) -->
+				<div class="col-md-6 d-flex align-items-center ftco-animate">
+				  <div class="text pl-md-5">
+					<span class="subheading">Hey!</span>
+					<h1 class="mb-4 mt-3">I'm <span>Sai Phanindra</span></h1>
+	  
+					<!-- Typing animation -->
+					<span id="typing-animation" class="h4 font-weight-bold d-block mb-3"></span>
+	  
+					<script>
+					  const typingAnimationElement = document.getElementById('typing-animation');
+					  const typingTexts = ['Data Scientist', 'AI Enthusiast'];
+					  function playTypingAnimation(text) {
 						for (let i = 0; i < text.length; i++) {
-							setTimeout(() => {
+						  setTimeout(() => {
 							typingAnimationElement.textContent += text[i];
-							}, i * 100); // Increase the delay to slow down the typing animation
+						  }, i * 100);
 						}
-
-						// Once the animation is complete, reset the text and start over
 						setTimeout(() => {
-							typingAnimationElement.textContent = '';
-							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						  typingAnimationElement.textContent = '';
+						  playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
 						}, text.length * 150);
-						}
-
-						// Start the typing animation loop
-						playTypingAnimation(typingTexts[0]);
-
-						</script>
-
-						<br>
-						<br>
-			            <h2>Looking for New Grad roles</h2>
-						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
-						<!-- <br> -->
-			            <p><a href="https://drive.google.com/file/d/1UcJ2VLspS9d9cb6rFXMe8pgwykJLBk-r/view?usp=sharing" target="_blank" class="btn btn-primary py-3 px-4" target="_blank">Download Resume</a> 
-							<!-- <a href="https://github.com/rishabhnmishra" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p> -->
-		            </div>
-		          </div>
-	        	</div>
-	        </div>
-	      </div>
-		</div>
-    </section>
-
-
-
-    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
-    	<div class="container">
-			<div class="row">
-				<div class="row d-flex align-items-stretch">
-				<!-- <div class="row d-flex"> -->
-					<div class="col-md-6 col-lg-5 d-flex">
-						<div class="img-about img d-flex align-items-stretch">
-							<div class="overlay">
-								<div class="row">
-									<div class="col-sm-6 col-md-5">
-									  <div class="about-img">
-										<img src="images/about-me.png" class="img-fluid rounded b-shadow-a" alt="">
-									  </div>
-									</div>
-									<!-- Details next to profile image -->
-									<div class="col-sm-6 col-md-7">
-									  <div class="about-info">
-										<p><span class="title-s">Name: </span> <span>Sai Phanindra</span></p>
-										<p><span class="title-s">Job Role: </span> <span>Data Analyst</span></p>
-										<p><span class="title-s">Experience: </span> <span>3 Years</span></p>
-										<p><span class="title-s">Address: </span> <span>USA</span></p>
-									  </div>
-									</div>
-								  </div>
-
-
-
-								<!-- <div class="skill-mf">
-									<p class="title-s">Skills</p>
-									<span>SQL</span> <span class="pull-right">95%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>PYTHON</span> <span class="pull-right">85%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>Data Visualization</span> <span class="pull-right">90%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>Statistical Analysis</span> <span class="pull-right">85%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>Machine Learning</span> <span class="pull-right">80%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-								</div> -->
-							</div>
-						</div>
-					</div>
-					
-					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
-						<div class="row justify-content-start pb-3">
-							<div class="col-md-12 heading-section ftco-animate">
-								
-								<h1 class="big">About</h1>
-								<h2 class="mb-4">About Me</h2>
-								
-								<p>With over 3 years of comprehensive experience in the field of data science & analytics, accompanied by a Master's degree in Data Science,
-									I'm proficient in building data pipelines, statistical analysis, hypothesis testing,  &amp; machine learning. 
-									I specialize in transforming complex data into strategic insights and driving innovative business solutions.</p>
-								<ul class="about-info mt-4 px-md-0 px-2">
-									<li class="d-flex"><span>Profile:</span> <span>Data Science &amp; Analytics</span></li>
-									<li class="d-flex"><span>Domain:</span> <span>Marketing, Energy, Oil &amp; Gas</span></li>
-									<li class="d-flex"><span>Education:</span> <span>Master's in Business Analytics &amp; Data Science</span></li>
-									<li class="d-flex"><span>Language:</span> <span>English</span></li>
-									<!-- <li class="d-flex"><span>BI Tools:</span> <span>Tableau, &amp;Microsoft Power BI </span></li> -->
-									<li class="d-flex"><span>Tech Stack:</span> <span>Python, C++, SAS, Pyspark, MySQL, SQL Server  &amp; MongoDB </span></li>
-									<li class="d-flex"><span>BI Tools:</span> <span>Tableau &amp; Microsoft Power BI </span></li>
-									<li class="d-flex"><span>Cloud Tech:</span> <span>AWS, Azure &amp; GCP </span></li>
-									<li class="d-flex"><span>Certifications:</span> <span>Tableau Desktop Specialist, AWS Cloud Practitioner</span></li>
-									
-								</ul>
-							</div>
-						</div>
-
-
-						<!-- <div class="counter-wrap ftco-animate d-flex mt-md-3">
-							<div class="text">
-								<p class="mb-4">
-									<span class="number" data-number="30">0</span> <span>+</span>
-									<span>&nbsp; Projects completed</span>
-								</p>
-								<p><a href="https://www.linkedin.com/in/rishabhnmishra/" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
-							</div>
-						</div> -->
-					</div>
+					  }
+					  playTypingAnimation(typingTexts[0]);
+					</script>
+	  
+					<h5 class="mt-3">Seeking Full-Time Opportunities in the Data Science Domain | MS Data Science @ OSU | Marketing Data Scientist at AAA | 4+ years of experience | Skilled in Data Science, Machine Learning, Analytics and AI.</h5>
+	  
+					<p class="mt-4">
+					  <a href="https://drive.google.com/file/d/1Lp7OVwl2lzkbNFdeDeFQK5K3ECBitIcd/view?usp=sharing" target="_blank" class="btn btn-primary py-3 px-4">Download Resume</a>
+					</p>
+				  </div>
 				</div>
+	  
+				<!-- IMAGE CONTENT (Right Side) -->
+				<div class="col-md-6 d-flex align-items-center justify-content-center image-wrapper">
+				  <img src="images/13.png" alt="Sai Phanindra" class="profile-image" />
+				</div>
+	  
+			  </div>
 			</div>
+		  </div>
 		</div>
-    </section>
+	  </section>
+
+
+	  <section id="about-section" class="about-section">
+		<div class="about-container">
+		  <div class="about-image">
+			<img src="images/14.png" alt="Sai Phanindra">
+		  </div>
+		  <div class="about-text">
+			<h2>About <span>Me</span></h2>
+			<h3><span>Data</span> Scientist</h3>
+			<p>
+				Hi, I’m Phanindra — a Data Scientist with a Master’s in Data Science from Oklahoma State University. 
+				I’ve gained hands-on experience at AAA and GAIL, working on machine learning models, business metrics, and data-driven experiments that support strategic decisions.
+				 I'm now seeking full-time opportunities to apply my skills to real-world, data-centric challenges.
+
+
+			</p>
+		  </div>
+		</div>
+	  </section>
+	  
+
+
+
+	  
+	  
+
+
+
 
 	
     <!-- <section class="ftco-section ftco-no-pb" id="resume-section"> -->
@@ -357,13 +267,15 @@
 				<div class="col-md-5">
 					<div class="resume-wrap ftco-animate">
 						<span class="date">AAA Auto Club Group, USA</span>
-						<h2>Data Scientist(Capstone Project)</h2>
+						<h2>Data Scientist Co-op</h2>
 						<span class="position">Oct 2023-Mar 2024</span>
 						<p class="mt-4">The Auto Club Group (ACG) is an insurance company in US providing roadside assistance, insurance, travel to over 13 Million members. 
 							<ul>
-								<li>Developed an XGBoost classification model for direct mail campaigns to identify customers that will subscribe & achieved a recall of 0.75, and boosted campaign ROI by 73%.</li>
+								<li>Drove $500K revenue growth in P&C insurance & improved agent productivity by building XGBoost model
+									(AUC = 0.84) on Databricks to score 22M leads, enabling agents to prioritize  prospects.</li>
 								<li style="list-style-type: none;">&nbsp;</li>
-								<li>Designed a Customer Acquisition tool using Tableau that provides the target customer list based on available marketing budget.</li>
+								<li>Built a multi-channel prediction model using Random Forest and deployed using Azure ML, to optimize routing
+									of travel leads across 5 channels boosting engagement by 22%.</li>
 								<!-- <li>Delivered recommendations on ideal customer profile by identifying key factors influencing membership conversion through extensive EDA.</li> -->
 							</ul>
 						</p>
@@ -374,13 +286,14 @@
 				<div class="col-md-5">
 					<div class="resume-wrap ftco-animate">
 						<span class="date">GAIL INDIA Limited, India</span>
-						<h2>Data Analyst</h2>
+						<h2>Data Scientist</h2>
 						<span class="position">Dec 2020 - June 2023</span>
 						<p class="mt-4">GAIL (India) Limited, India’s Largest Natural Gas Company, involved in natural gas transmission, marketing and processing and E&P. 
 							<ul>
-								<li>Developed E2E automated ETL data pipelines using AWS Lambda, S3, Athena, and Glue for processing high volumes of supply chain data resulting in 20% reduction in processing time.</li>
+								<li>Implemented predictive maintenance solutions leveraging machine learning models, reducing equipment downtime by 25% through early detection of potential failures.</li>
 								<li style="list-style-type: none;">&nbsp;</li>
-								<li>Improved project milestone monitoring by 15% through data reporting and visualization of project metrics, KPIs, and cost management using Tableau.</li>
+								<li>Created and managed 6+ interactive analytical dashboards with KPI reports using Tableau leading to 45%
+									improvement in decision-making and enhanced stakeholder insights.</li>
 								<!-- <li>Analyzed data and enhanced system performance by realizing $12K in cost savings by optimizing the operational strategies of large equipment using SQL and Python.</li> -->
 							</ul>
 						</p>
@@ -440,6 +353,21 @@
           </div>
         </div>
         <div class="row d-flex">
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/PHANINDRA25/Click-Fraud-Detection-for-Digital-Ads/tree/master" target="_blank"class="block-20 zoom-effect" style="background-image: url('images/click_fraud.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/PHANINDRA25/Click-Fraud-Detection-for-Digital-Ads/tree/master" target="_blank">Click Fraud Detection for Digital Advertising</a></h3>
+				  <p>An end-to-end ML project designed to detect click fraud in digital advertising using PySpark and Azure Databricks. The pipeline incorporates MLOps best practices using MLflow and an inference pipeline for model predictions.</p>
+				  
+				  <p><strong>Models/Skills</strong> : Pyspark, Databricks, MLFlow, HyperOpt</p>
+				</div>
+			  </div>
+			</div>
+
+
           <div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry justify-content-end">
               <a href="https://github.com/PHANINDRA25/Best-Gym-Location" target="_blank"class="block-20 zoom-effect" style="background-image: url('images/gym.jpg');">
@@ -447,12 +375,27 @@
               <div class="text mt-3 float-right d-block">
 
                 <h3 class="heading"><a href="https://github.com/PHANINDRA25/Best-Gym-Location" target="_blank">Finding the best location to open a Gym</a></h3>
-                <p>Identified the optimal location for a new gym in the city by implementing a data-driven methodology.</p>
-				<p><strong>Tools</strong> : Python, Foursquare API, REST APIs</p>
-				<p><strong>Models/Libraries</strong> : KNN algorithm, Clustering, Pandas, Plotly, Numpy</p>
+                <p>A location optimization model for a new gym using clustering algorithms and real-world data acquired through third-party APIs.</p>
+				
+				<p><strong>Models/Skills</strong> : Customer Segmentation, Clustering models, REST APIs</p>
               </div>
             </div>
           </div>
+		  <div class="col-md-4 d-flex ftco-animate">
+			<div class="blog-entry justify-content-end">
+			<a href="https://github.com/PHANINDRA25/Hotel-inspection-result-prediction" target="_blank"class="block-20 zoom-effect" style="background-image: url('images/hotel.jpg');">
+			</a>
+			<div class="text mt-3 float-right d-block">
+
+			  <h3 class="heading"><a href="https://github.com/PHANINDRA25/Hotel-inspection-result-prediction" target="_blank">Hotel Inspection Outcome prediction using Machine Learning</a></h3>
+			  <p>A Predictive model to determine inspection outcomes by executing all key stages of the machine learning lifecycle—including data cleaning, feature engineering, exploratory analysis, model selection and evaluation.</p>
+			  
+			  <p><strong>Models/Skills</strong> : Scikit-learn, Data Cleaning, Data Exploration , Model Evaluation </p>
+			</div>
+		  </div>
+		</div>
+		<div class="w-100 d-none d-md-block"></div>
+
           <div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry justify-content-end">
               <a href="https://github.com/PHANINDRA25/Commentary-Generator-using-LLMs" target="_blank" class="block-20 zoom-effect" style="background-image: url('images/llms.jpg');">
@@ -480,10 +423,8 @@
             </div>
           </div>
         </div>
-	<br>
-		<!-- added justify-content-center to center align the last two projects -->
 		<div class="row d-flex justify-content-center">  
-			<div class="col-md-4 d-flex ftco-animate">
+			<!-- <div class="col-md-4 d-flex ftco-animate">
 				<div class="blog-entry justify-content-end">
 				<a href="https://public.tableau.com/app/profile/venkat.sai.phanindra.anagam/viz/AnalysisonH1BVisafilings2021-23/Story1" target="_blank" class="block-20 zoom-effect" style="background-image: url('images/usa.jpg');">
 				</a>
@@ -496,7 +437,12 @@
 				</div>
 			  </div>
 			</div>
-			<div class="col-md-4 d-flex ftco-animate">
+			<div class="w-100 d-none d-md-block"></div> -->
+
+	<br>
+		<!-- added justify-content-center to center align the last two projects -->
+
+			<!-- <div class="col-md-4 d-flex ftco-animate">
 				<div class="blog-entry justify-content-end">
 				<a href="https://github.com/PHANINDRA25/Sports-Retail-Revenue-Optimization-" target="_blank" class="block-20 zoom-effect" style="background-image: url('images/sports.jpg');">
 				</a>
@@ -508,7 +454,7 @@
 				  <p><strong>Skills</strong> : Critical Thinking, Business Acumen </p>
 				</div>
 			  </div>
-			</div>
+			</div> -->
 		 </div>
 	  </div>
     </section>
@@ -577,44 +523,43 @@
             <p>Below are the details to reach out to me!</p>
           </div>
         </div>
-
-        <div class="row d-flex contact-info mb-5">
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-map-signs"></span>
-          		</div>
-          		<h3 class="mb-4">Address</h3>
-	            <p>Texas, USA</p>
-	          </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-phone2"></span>
-          		</div>
-          		<h3 class="mb-4">Contact Number</h3>
-	            <p><a href="tel://4052691784">+ 1 405 269 1784</a></p>
-	          </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-paper-plane"></span>
-          		</div>
-          		<h3 class="mb-4">Email Address</h3>
-	            <p><a href="mailto:phanindraanagam@gmail.com">phanindraanagam@gmail.com</a></p>
-	          </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-globe"></span>
-          		</div>
-          		<h3 class="mb-4">Download Resume</h3>
-	            <p><a href="https://forms.gle/XwcTGsNhqLWyRSpC8" target="_blank">Click here</a></p>
-	          </div>
-          </div>
+		<div class="container">
+			<div class="row contact-info justify-content-center text-center">
+			  <!-- Address -->
+			  <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-4">
+				<div class="box p-4 w-100">
+				  <div class="icon-circle mb-3">
+					<span class="icon-map-signs"></span>
+				  </div>
+				  <h3 class="mb-3 text-uppercase">Address</h3>
+				  <p class="text-light">Texas, USA</p>
+				</div>
+			  </div>
+		  
+			  <!-- Email -->
+			  <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-4">
+				<div class="box p-4 w-100">
+				  <div class="icon-circle mb-3">
+					<span class="icon-paper-plane"></span>
+				  </div>
+				  <h3 class="mb-3 text-uppercase">Email Address</h3>
+				  <p><a href="mailto:phanindrasai970@gmail.com" class="text-light">phanindrasai970@gmail.com</a></p>
+				</div>
+			  </div>
+		  
+			  <!-- Resume -->
+			  <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-4">
+				<div class="box p-4 w-100">
+				  <div class="icon-circle mb-3">
+					<span class="icon-globe"></span>
+				  </div>
+				  <h3 class="mb-3 text-uppercase">Download Resume</h3>
+				  <p><a href="https://drive.google.com/file/d/1Lp7OVwl2lzkbNFdeDeFQK5K3ECBitIcd/view?usp=sharing" target="_blank" class="text-light">Click here</a></p>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  
 
 		  <div class="container">
 			<br>
